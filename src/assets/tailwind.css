@@ -8,7 +8,7 @@
         src: url('/fonts/StretchPro.woff2') format('woff2'), url('/fonts/StretchPro.woff') format('woff');
     }
 
-    html{
-        @apply bg-branco text-preto
+    body{
+        @apply text-preto dark:text-branco bg-branco dark:bg-preto transition-colors ease-in-out duration-1000
     }
 }
