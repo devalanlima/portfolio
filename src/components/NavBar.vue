@@ -13,7 +13,10 @@
             </svg>
             <p class="sr-only">Menu</p>
         </button>
-        <h1 class="font-stretch text-xl leading-none m-0">AALAN LLIMA</h1>
+        <div>
+            <h1 class="sr-only">Alan Lima</h1>
+            <span class="font-stretch text-xl leading-none m-0">AALAN LLIMA</span>
+        </div>
         <button @click="darkMode" class="border-l-[1px] border-preto dark:border-branco w-11 h-11 grid place-items-center select-none">
             <div title="Alternar para modo escuro" v-if="isDark">
                 <svg class="fill-preto dark:fill-branco" version="1.0" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -103,7 +106,7 @@
             </div>
         </button>
             <ul
-                :class="['text-lg font-mono absolute top-11 left-0 w-[187px] border-[1px] border-l-0 flex flex-col border-preto dark:border-branco', { 'hidden': menuIsHidden }]">
+                :class="['text-lg font-mono absolute top-11 left-0 w-[187px] border-[1px] border-l-0 flex flex-col border-preto dark:border-branco bg-branco dark:bg-preto transition-colors ease-in-out duration-[2000ms]', { 'hidden': menuIsHidden }]">
                 <li class="text-preto dark:text-branco p-2 pl-4 hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto">
                     <a href="#">Home</a>
                 </li>
@@ -118,10 +121,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 const menuIsHidden = ref(true)
 
 const isDark = ref()
+onMounted(()=>{
+    localStorage.setItem("theme", "light");
+})
 const darkMode = () => {
     if (document.documentElement.classList.contains("dark")) {
         document.documentElement.classList.remove('dark');
