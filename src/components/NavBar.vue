@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex border-b-[1px] border-preto dark:border-branco justify-between items-center relative">
+    <nav class="flex border-b-[1px] border-preto dark:border-branco justify-between items-center relative bg-branco dark:bg-preto">
         <button @click="menuIsHidden = !menuIsHidden"
             class="border-r-[1px] border-preto dark:border-branco w-11 h-11 grid place-items-center">
             <svg class="fill-preto dark:fill-branco" width="22" height="19" viewBox="0 0 22 19"
@@ -111,7 +111,7 @@
                     <a href="#">Home</a>
                 </li>
                 <li class="text-preto dark:text-branco p-2 pl-4 hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto">
-                    <a href="#">Projetos</a>
+                    <a href="#section_two">Projetos</a>
                 </li>
                 <li class="text-preto dark:text-branco p-2 pl-4 hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto">
                     <a href="#">Contato</a>

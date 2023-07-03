@@ -6,7 +6,7 @@
             </span></h2>
         </div>
 
-        <p class="text-justify font-mono mt-4">
+        <p class="text-justify font-roboto mt-4">
             Meu nome é Alan Lima e sou um desenvolvedor júnior front-end. Tenho conhecimentos em <span class="font-bold">HTML</span>, <span class="font-bold">CSS</span>, <span class="font-bold">JavaScript</span> e <span class="font-bold">Vue.js</span>. Estou entusiasmado para trabalhar em projetos desafiadores e colaborar com equipes talentosas. 
         </p>
 

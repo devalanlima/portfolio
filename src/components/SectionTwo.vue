@@ -1,5 +1,5 @@
 <template>
-    <article class="h-[900px] relative overflow-hidden">
+    <article class="relative overflow-hidden">
         <div class="text-center">
             <h3 class="sr-only">Projetos</h3>
             <span class="font-stretch text-[2.1rem]">PPROJETOS</span>
