@@ -106,7 +106,7 @@
             </div>
         </button>
             <ul
-                :class="['text-lg font-mono absolute top-11 left-0 w-[187px] border-[1px] border-l-0 flex flex-col border-preto dark:border-branco bg-branco dark:bg-preto transition-colors ease-in-out duration-[2000ms]', { 'hidden': menuIsHidden }]">
+                :class="['text-lg font-mono absolute top-11 left-0 w-[187px] border-[1px] border-l-0 flex flex-col border-preto dark:border-branco bg-branco dark:bg-preto ', { 'hidden': menuIsHidden }]">
                 <li class="text-preto dark:text-branco p-2 pl-4 hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto">
                     <a href="#">Home</a>
                 </li>

@@ -16,13 +16,13 @@
         </div>
         <div class="hidden items-center justify-center gap-6 mt-3">
             <button @click="prev"><svg
-                    class="rotate-180 transition-colors ease-in-out duration-[2000ms] -ml-[5px] fill-branco dark:fill-preto stroke-preto dark:stroke-branco"
+                    class="rotate-180 -ml-[5px] fill-branco dark:fill-preto stroke-preto dark:stroke-branco"
                     width="28" height="29" viewBox="0 -1 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.0208 1H2L13.9792 13.5L2 26H15.0208L27 13.5L15.0208 1Z" />
                 </svg>
             </button>
             <button @click="next"><svg
-                    class="transition-colors ease-in-out duration-[2000ms] -ml-[5px] fill-branco dark:fill-preto stroke-preto dark:stroke-branco"
+                    class="-ml-[5px] fill-branco dark:fill-preto stroke-preto dark:stroke-branco"
                     width="28" height="30" viewBox="0 -1 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.0208 1H2L13.9792 13.5L2 26H15.0208L27 13.5L15.0208 1Z" />
                 </svg>
