@@ -9,6 +9,6 @@
     }
 
     body{
-        @apply text-preto dark:text-branco bg-branco dark:bg-preto transition-colors ease-in-out duration-[2000ms]
+        @apply text-preto dark:text-branco bg-branco dark:bg-preto
     }
 }
