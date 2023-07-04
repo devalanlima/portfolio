@@ -31,31 +31,45 @@
             </a>
         </li>
         <li>
-            <a href="/public/projects/Nice-min.png" download="filename" title="Baixar Currículo">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 487.000000 489.000000" preserveAspectRatio="xMidYMid meet"
-                    class="fill-preto dark:fill-branco w-[2.1rem]"
-                    >
-
+            <a ref="cv" href="#" download="Alan Lima Currículo CV"></a>
+            <button type="button"  @click="isOpen = !isOpen" class="cursor-pointer" title="Baixar Currículo">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487.000000 489.000000"
+                    preserveAspectRatio="xMidYMid meet" class="fill-preto dark:fill-branco w-[2.1rem]">
                     <g transform="translate(0.000000,489.000000) scale(0.100000,-0.100000)" stroke="none">
                         <path d="M2432 4873 l-2422 -3 0 -2430 0 -2430 2425 0 2425 0 0 2435 c0 1339
--1 2434 -2 2433 -2 -2 -1093 -4 -2426 -5z m1996 -2436 l2 -2067 -1990 0 -1990
-0 -2 2066 c-2 1136 -1 2068 1 2070 2 2 898 3 1990 2 l1986 -3 3 -2068z" />
+                -1 2434 -2 2433 -2 -2 -1093 -4 -2426 -5z m1996 -2436 l2 -2067 -1990 0 -1990
+                0 -2 2066 c-2 1136 -1 2068 1 2070 2 2 898 3 1990 2 l1986 -3 3 -2068z" />
                         <path d="M1404 3930 c-187 -37 -313 -199 -302 -386 5 -75 41 -169 80 -212 24
--25 25 -24 -51 -81 -66 -49 -124 -118 -161 -192 -32 -62 -60 -160 -60 -208 l0
--31 184 0 184 0 12 47 c38 151 256 186 345 56 14 -21 25 -45 25 -55 0 -48 1
--48 197 -48 l185 0 -7 53 c-10 79 -42 169 -84 234 -40 61 -134 154 -182 179
-l-29 14 34 48 c52 73 75 147 72 228 -2 38 -7 78 -11 89 -50 139 -145 229 -275
-259 -71 17 -94 18 -156 6z" />
+                -25 25 -24 -51 -81 -66 -49 -124 -118 -161 -192 -32 -62 -60 -160 -60 -208 l0
+                -31 184 0 184 0 12 47 c38 151 256 186 345 56 14 -21 25 -45 25 -55 0 -48 1
+                -48 197 -48 l185 0 -7 53 c-10 79 -42 169 -84 234 -40 61 -134 154 -182 179
+                l-29 14 34 48 c52 73 75 147 72 228 -2 38 -7 78 -11 89 -50 139 -145 229 -275
+                259 -71 17 -94 18 -156 6z" />
                         <path d="M2310 3755 l0 -185 835 0 835 0 0 185 0 185 -835 0 -835 0 0 -185z" />
                         <path d="M2317 3183 c-4 -3 -7 -87 -7 -185 l0 -178 835 0 835 0 0 185 0 185
--828 0 c-456 0 -832 -3 -835 -7z" />
+                -828 0 c-456 0 -832 -3 -835 -7z" />
                         <path d="M900 1875 l0 -185 1553 2 1552 3 3 183 2 182 -1555 0 -1555 0 0 -185z" />
                         <path d="M900 1125 l0 -185 1555 0 1555 0 0 185 0 185 -1555 0 -1555 0 0 -185z" />
                     </g>
                 </svg>
-
-            </a>
+            </button>
         </li>
+        <MainModal 
+        :is-open="isOpen" 
+        start-message="Gostaria de baixar meu currículo?" confirm-message="O download foi iniciado =D"
+        cancel-message="O download foi cancelado =/" @isConfirmed="handleConfirmed" />
     </ul>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+import MainModal from './MainModal.vue';
+const isOpen = ref(false)
+
+const cv = ref(null)
+const handleConfirmed = (event) => {
+    if (event){
+        cv.value.click()
+    }
+}
+</script>
