@@ -3,12 +3,41 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-family: "Stretch";
-        src: url('/fonts/StretchPro.woff2') format('woff2'), url('/fonts/StretchPro.woff') format('woff');
-    }
+  @font-face {
+    font-family: "Stretch";
+    src: url("/fonts/StretchPro.woff2") format("woff2"),
+      url("/fonts/StretchPro.woff") format("woff");
+  }
 
-    body{
-        @apply text-preto dark:text-branco bg-branco dark:bg-preto
-    }
+  body {
+    @apply text-preto dark:text-branco bg-branco dark:bg-preto;
+  }
+  ::-webkit-scrollbar {
+    @apply w-3;
+  }
+
+  /* Cor de fundo da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    @apply bg-preto outline outline-1 outline-preto;
+  }
+
+  /* Cor do thumb (a alça da barra de rolagem) */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-branco;
+  }
+
+  /* Cor do thumb quando passar o mouse por cima */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-branco bg-opacity-70;
+  }
+
+  ::selection {
+    @apply bg-neutral-500 text-branco ;
+  }
+
+  html {
+    scrollbar-color: #F8F8F8 #0d0d0d; 
+  }
 }
+
+
