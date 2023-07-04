@@ -5,7 +5,7 @@
             <span class="font-stretch text-[2.1rem]">CCONTATOS</span>
         </div>
         <div class="ml-6">
-            <form class="w-[492px] h-[492px] border-2 border-b-transparent border-preto dark:border-branco p-7 mt-7 flex flex-col gap-7 overflow-hidden"
+            <form class="w-[492px] border-2 border-b-transparent border-preto dark:border-branco p-7 mt-7 flex flex-col gap-7 overflow-hidden"
             action="https://formsubmit.co/d508eed6ee546479cd0f3667fecc4fb5"
             method="POST"
             >
