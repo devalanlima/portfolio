@@ -12,7 +12,7 @@ const router = createRouter({
     {
       path: "/sucesso",
       name: "sucesso",
-      component: () => import("../views/SucessView.vue"),
+      component: () => import("../views/SuccessView.vue"),
     },
   ],
 });

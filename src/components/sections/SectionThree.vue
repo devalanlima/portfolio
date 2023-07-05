@@ -9,6 +9,8 @@
             action="https://formsubmit.co/d508eed6ee546479cd0f3667fecc4fb5"
             method="POST"
             >
+            <input type="hidden" name="_captcha" value="false"> <!-- Disable reCAPTCHA -->
+            <input type="hidden" name="_next" value="http://localhost:5173/sucesso"> <!-- alternative url -->
                 <ul class="flex flex-col gap-7 w-60">
                     <li>
                         <label for="contact-name"></label>
