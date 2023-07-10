@@ -1,5 +1,5 @@
 <template>
-    <ul class="flex justify-between">
+    <ul class="flex">
         <li>
             <a href="https://www.linkedin.com/in/devalanlima/" target="_blank">
                 <svg width="34" height="34" viewBox="0 0 34 34" class="fill-preto dark:fill-branco"
@@ -30,11 +30,11 @@
 
             </a>
         </li>
-        <li>
+        <li class="h-[34px]">
             <a ref="cv" href="#" download="Alan Lima Currículo CV"></a>
-            <button type="button"  @click="isOpen = !isOpen" class="cursor-pointer" title="Baixar Currículo">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487.000000 489.000000"
-                    preserveAspectRatio="xMidYMid meet" class="fill-preto dark:fill-branco w-[2.1rem]">
+            <button type="button"  @click="isOpen = !isOpen" class="cursor-pointer m-0 p-0" title="Baixar Currículo">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 489.000000 489.000000"
+                    preserveAspectRatio="xMidYMid meet" class="fill-preto dark:fill-branco w-[34px] h-[34px]">
                     <g transform="translate(0.000000,489.000000) scale(0.100000,-0.100000)" stroke="none">
                         <path d="M2432 4873 l-2422 -3 0 -2430 0 -2430 2425 0 2425 0 0 2435 c0 1339
                 -1 2434 -2 2433 -2 -2 -1093 -4 -2426 -5z m1996 -2436 l2 -2067 -1990 0 -1990
