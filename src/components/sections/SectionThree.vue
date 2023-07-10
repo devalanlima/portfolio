@@ -45,7 +45,7 @@
                 <div class="font-roboto text-preto dark:text-branco flex flex-col gap-2 w-fit mt-5">
                     <p>21 99605-8924</p>
                     <p>devalanlima@gmail.com</p>
-                    <ContactIcons class="w-full mt-5" />
+                    <ContactIcons class="w-full mt-5 justify-between" />
                 </div>
             </form>
         </div>
