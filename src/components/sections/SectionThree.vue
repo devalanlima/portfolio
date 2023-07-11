@@ -1,5 +1,5 @@
 <template>
-    <div class="relative overflow-hidden mx-auto -mr-5 pr-5">
+    <div class="relative overflow-hidden mx-auto">
         <div class="text-center">
             <h3 class="sr-only">Contatos</h3>
             <span class="font-stretch text-[2.1rem]">CCONTATOS</span>
