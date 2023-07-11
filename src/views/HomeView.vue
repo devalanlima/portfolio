@@ -26,16 +26,14 @@ import { ref } from 'vue'
 
 <template>
   <header class="fixed top-0 w-full z-50">
-    <NavBar/>
+    <NavBar class="w-full"/>
   </header>
-  <main class="px-5 ">
-    <SectionOne class="my-7 mt-14"/>
-    <hr class="border-t-2 border-preto dark:border-branco">
-    <SectionTwo class="my-7"/>
-    <hr class="border-t-2 border-preto dark:border-branco">
-    <SectionThree class="my-7"/>
+  <main>
+    <SectionOne class="my-14 mt-14 px-5"/>
+    <SectionTwo class="my-24"/>
+    <SectionThree class="-mb-1 mt-24 px-5 overflow-hidden"/>
   </main>
   <footer class="z-10 relative">
-    <MainFooter class="-mt-[1.9rem]"/>
+    <MainFooter/>
   </footer>
 </template>
