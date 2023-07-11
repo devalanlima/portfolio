@@ -1,29 +1,28 @@
 <template>
-    <div>
-        <div class="scroll_hidden w-full max-w-[400px] border-2 border-preto dark:border-branco overflow-x-scroll mx-auto snap-x snap-mandatory scroll-smooth"
-            ref="el" @wheel="teste">
-            <div class="flex w-[300%] transition-transform duration-500" ref="carouselContainer">
-                <div class="w-full snap-center">
-                    <img class="object-cover w-full" src="/projects/Nice-min.png" alt="">
-                </div>
-                <div class="w-full snap-center">
-                    <img class="object-cover w-full" src="/projects/Equator-min.png" alt="">
-                </div>
-                <div class="w-full snap-center">
-                    <img class="object-cover w-full" src="/projects/PokexChange-min.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="hidden items-center justify-center gap-6 mt-3">
-            <button @click="prev"><svg
-                    class="rotate-180 -ml-[5px] fill-branco dark:fill-preto stroke-preto dark:stroke-branco"
-                    width="28" height="29" viewBox="0 -1 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="max-w-[1311px] mx-auto flex flex-col gap-4">
+        <div class="flex min-w-[375px] relative md:border-2 border-preto border-2">
+            <button @click="prev" class="bg-neutral-400 dark:bg-neutral-100 dark:bg-opacity-5 bg-opacity-5 hover:bg-opacity-20 md:bg-opacity-20 md:hover:bg-opacity-30 px-5 absolute md:grow min-h-full z-30 md:relative cursor-pointer"><svg
+                    class="rotate-180 -ml-[5px] fill-preto dark:fill-branco stroke-branco dark:stroke-preto h-[30px] md:h-[50px]" viewBox="0 -1 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.0208 1H2L13.9792 13.5L2 26H15.0208L27 13.5L15.0208 1Z" />
                 </svg>
             </button>
-            <button @click="next"><svg
-                    class="-ml-[5px] fill-branco dark:fill-preto stroke-preto dark:stroke-branco"
-                    width="28" height="30" viewBox="0 -1 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="scroll_hidden w-full border-2 md:border-t-0 md:border-b-0 border-preto dark:border-branco overflow-x-scroll mx-auto snap-x snap-mandatory scroll-smooth"
+                ref="el" @wheel="teste">
+                <div class="flex w-[300%] h-[70vh] transition-transform duration-500" ref="carouselContainer">
+                    <div class="w-full snap-center">
+                        <iframe class="w-full h-full select-none" src="https://pokexchange.netlify.app/"></iframe>
+                    </div>
+                    <div class="w-full snap-center">
+                        <iframe class="w-full h-full select-none" src="https://nicewebsite.netlify.app/"></iframe>
+                    </div>
+                    <div class="w-full snap-center">
+                        <iframe class="w-full h-full select-none"
+                            src="https://equatortravelwebsite.netlify.app/"></iframe>
+                        </div>
+                    </div>
+            </div>
+            <button @click="next" class="bg-neutral-400 dark:bg-neutral-100 dark:bg-opacity-5 bg-opacity-5 hover:bg-opacity-20 md:bg-opacity-20 md:hover:bg-opacity-30 px-5 absolute right-0 z-30 md:relative md:grow min-h-full cursor-pointer"><svg
+                    class="-ml-[5px] fill-preto dark:fill-branco stroke-branco dark:stroke-preto h-[30px] md:h-[50px]" viewBox="0 -1 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.0208 1H2L13.9792 13.5L2 26H15.0208L27 13.5L15.0208 1Z" />
                 </svg>
             </button>
@@ -82,11 +81,11 @@ const teste = (e) => {
 
 const atualProject = computed(() => {
     if (x.value >= 0 && x.value < carouselItemWidth.value) {
-        return 'Nice'
-    } else if (x.value >= carouselItemWidth.value && x.value < carouselItemWidth.value * 2) {
-        return 'Equator'
-    } else if (x.value >= carouselItemWidth.value * 2) {
         return 'PokexChange'
+    } else if (x.value >= carouselItemWidth.value && x.value < carouselItemWidth.value * 2) {
+        return 'Nice'
+    } else if (x.value >= carouselItemWidth.value * 2) {
+        return 'Equator'
     } else {
         return 'error'
     }
@@ -104,6 +103,12 @@ const atualTags = computed(() => {
             return 'error'
     }
 })
+
+const projects = ref(["/projects/Nice-min.png", "/projects/Equator-min.png", "/projects/PokexChange-min.png"])
+import { useWindowSize } from '@vueuse/core'
+
+const { width } = useWindowSize()
+
 </script>
 
 <style scoped>
