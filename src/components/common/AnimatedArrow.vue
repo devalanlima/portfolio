@@ -1,5 +1,5 @@
 <template>
-    <ul ref="arrows" class="inline-flex items-center justify-center ml-1 w-[146px]">
+    <ul ref="arrows" class="inline-flex items-center justify-center ml-1">
         <li class="grow flex justify-center items-center relative -ml-0">
             <svg class=" fill-branco stroke-preto dark:stroke-branco w-full aspect-square" viewBox="0 -1 28 28" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
