@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply text-preto dark:text-branco bg-branco dark:bg-preto;
+    @apply text-preto dark:text-branco bg-branco dark:bg-preto overflow-x-hidden;
   }
   ::-webkit-scrollbar {
     @apply w-3;
