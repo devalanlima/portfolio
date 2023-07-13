@@ -1,12 +1,12 @@
 <template>
     <article class="relative overflow-hidden max-w-[1311px] mx-auto" ref="el">
-        <div class="text-center md:text-left px-5">
+        <div class="text-center md:text-right px-5">
             <h3 class="sr-only">Projetos</h3>
             <span class="font-stretch text-[2.1rem]" :style="titleSize">PPROJETOS</span>
         </div>
         <CarouselProjects class="mt-14" />
         <GlobeImage
-            class="hidden md:block fill-branco dark:fill-preto bg-preto dark:bg-branco rounded-full absolute top-0 right-[10%] -z-10 rotate-[205deg] w-[300px] " />
+            class="hidden md:block fill-branco dark:fill-preto bg-preto dark:bg-branco rounded-full absolute top-0 left-[10%] -z-10 rotate-[205deg] w-[300px] " />
     </article>
 </template>
 
