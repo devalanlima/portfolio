@@ -36,7 +36,7 @@ onMounted(()=>{
         height: 0%;
     }
     100% {
-        height: 145%;
+        height: 200%;
     }
 }
 </style>

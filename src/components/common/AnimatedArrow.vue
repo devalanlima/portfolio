@@ -1,31 +1,31 @@
 <template>
     <ul ref="arrows" class="inline-flex items-center justify-center ml-1">
         <li class="grow flex justify-center items-center relative -ml-0">
-            <svg class=" fill-branco stroke-preto dark:stroke-branco w-full aspect-square" viewBox="0 -1 28 28" fill="none"
+            <svg class="stroke-preto dark:stroke-branco w-full aspect-square" viewBox="0 -1 28 28" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.0208 1H2L13.9792 13.5L2 26H15.0208L27 13.5L15.0208 1Z" />
             </svg>
         </li>
         <li class="grow flex justify-center items-center relative -ml-0">
-            <svg class=" fill-branco stroke-preto dark:stroke-branco w-full aspect-square" viewBox="0 -1 28 28" fill="none"
+            <svg class="stroke-preto dark:stroke-branco w-full aspect-square" viewBox="0 -1 28 28" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.0208 1H2L13.9792 13.5L2 26H15.0208L27 13.5L15.0208 1Z" />
             </svg>
         </li>
         <li class="grow flex justify-center items-center relative -ml-0">
-            <svg class=" fill-branco stroke-preto dark:stroke-branco w-full aspect-square" viewBox="0 -1 28 28" fill="none"
+            <svg class="stroke-preto dark:stroke-branco w-full aspect-square" viewBox="0 -1 28 28" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.0208 1H2L13.9792 13.5L2 26H15.0208L27 13.5L15.0208 1Z" />
             </svg>
         </li>
         <li class="grow flex justify-center items-center relative -ml-0">
-            <svg class=" fill-branco stroke-preto dark:stroke-branco w-full aspect-square" viewBox="0 -1 28 28" fill="none"
+            <svg class="stroke-preto dark:stroke-branco w-full aspect-square" viewBox="0 -1 28 28" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.0208 1H2L13.9792 13.5L2 26H15.0208L27 13.5L15.0208 1Z" />
             </svg>
         </li>
         <li class="grow flex justify-center items-center relative -ml-0">
-            <svg class=" fill-branco stroke-preto dark:stroke-branco w-full aspect-square" viewBox="0 -1 28 28" fill="none"
+            <svg class="stroke-preto dark:stroke-branco w-full aspect-square" viewBox="0 -1 28 28" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.0208 1H2L13.9792 13.5L2 26H15.0208L27 13.5L15.0208 1Z" />
             </svg>
@@ -49,10 +49,17 @@ onMounted(() => {
         } else {
             index = 0
         }
-        element.firstChild.classList.add('fill-preto')
-        setTimeout(() => {
-            element.firstChild.classList.remove('fill-preto')
-        }, 1500);
+        if (document.documentElement.classList.contains("dark")) {
+            element.firstChild.classList.add('fill-[var(--color1)]')
+            setTimeout(() => {
+                element.firstChild.classList.remove('fill-[var(--color1)]')
+            }, 1500);
+        } else {
+            element.firstChild.classList.add('fill-[var(--color2)]')
+            setTimeout(() => {
+                element.firstChild.classList.remove('fill-[var(--color2)]')
+            }, 1500);
+        }
     }, 500);
 })
 </script>

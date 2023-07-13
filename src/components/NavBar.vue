@@ -1,6 +1,9 @@
 <template>
     <nav class="flex border-b-[1px] border-preto dark:border-branco justify-between items-center relative bg-branco dark:bg-preto 
     ">
+        <div v-if="!isDark" id="darkModeTransition"
+            class="opacity-0 w-screen h-screen fixed top-0 left-0 bg-preto bg-opacity-80 z-50 pointer-events-none select-none ">
+        </div>
         <button @click="menuIsHidden = !menuIsHidden"
             class="border-r-[1px] border-preto dark:border-branco w-11 h-11 grid place-items-center sm:hidden">
             <svg class="fill-preto dark:fill-branco" width="22" height="19" viewBox="0 0 22 19"
@@ -18,9 +21,10 @@
             <h1 class="sr-only">Alan Lima</h1>
             <span class="font-stretch text-xl leading-none m-0">AALAN LLIMA</span>
         </div>
-        <ContactIcons class="hidden lg:flex gap-4 grow justify-end px-4"/>
-        <button @click="darkMode" class="border-l-[1px] border-preto dark:border-branco w-11 h-11 grid place-items-center select-none order-3">
-            <div title="Alternar para modo escuro" v-if="isDark">
+        <ContactIcons class="hidden lg:flex gap-4 grow justify-end px-4" />
+        <button @click="darkMode"
+            class="border-l-[1px] border-preto dark:border-branco w-11 h-11 grid place-items-center select-none order-3">
+            <div title="Alternar para modo escuro" v-if="!isDark">
                 <svg class="fill-preto dark:fill-branco" version="1.0" xmlns="http://www.w3.org/2000/svg" width="24"
                     height="24" viewBox="0 0 1000.000000 1000.000000" preserveAspectRatio="xMidYMid meet">
 
@@ -69,7 +73,7 @@
                 <p class="sr-only">Alternar para modo escuro</p>
             </div>
 
-            <div title="Alternar para modo claro" v-if="!isDark">
+            <div title="Alternar para modo claro" v-if="isDark">
                 <svg class="fill-preto dark:fill-branco" version="1.0" xmlns="http://www.w3.org/2000/svg" width="26"
                     height="26" viewBox="0 0 1206.000000 1206.000000" preserveAspectRatio="xMidYMid meet">
 
@@ -107,39 +111,56 @@
                 <p class="sr-only">Alternar para modo claro</p>
             </div>
         </button>
-            <ul
-                :class="['text-lg font-mono absolute top-11 left-0 w-[187px] border-[1px] border-l-0 flex flex-col border-preto dark:border-branco bg-branco dark:bg-preto sm:flex sm:relative sm:flex-row sm:border-none sm:top-0 sm:w-fit sm:mx-auto sm:mr-0', { 'hidden': menuIsHidden }]">
-                <li class="text-preto dark:text-branco hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto border-[1px] border-t-0 border-l-0 border-preto dark:border-branco sm:border-b-0 sm:border-l-[1px] sm:border-r-0 sm:min-w-[100px] sm:text-center">
-                    <a href="#" class="block w-full h-full p-2 pl-4 sm:p-2">Home</a>
-                </li>
-                <li class="text-preto dark:text-branco hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto border-[1px] border-t-0 border-l-0 border-preto dark:border-branco sm:border-b-0 sm:border-l-[1px] sm:border-r-0 sm:min-w-[100px] sm:text-center">
-                    <a href="#section_two" class="block w-full h-full p-2 pl-4 sm:p-2">Projetos</a>
-                </li>
-                <li class="text-preto dark:text-branco hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto border-[1px] border-t-0 border-l-0 border-preto dark:border-branco sm:border-b-0 sm:border-l-[1px] sm:border-r-0 sm:min-w-[100px] sm:text-center">
-                    <a href="#" class="block w-full h-full p-2 pl-4 sm:p-2">Contato</a>
-                </li>
-            </ul>
+        <ul
+            :class="['text-lg font-mono absolute top-11 left-0 w-[187px] border-[1px] border-l-0 flex flex-col border-preto dark:border-branco bg-branco dark:bg-preto sm:flex sm:relative sm:flex-row sm:border-none sm:top-0 sm:w-fit sm:mx-auto sm:mr-0', { 'hidden': menuIsHidden }]">
+            <li
+                class="text-preto dark:text-branco hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto border-[1px] border-t-0 border-l-0 border-preto dark:border-branco sm:border-b-0 sm:border-l-[1px] sm:border-r-0 sm:min-w-[100px] sm:text-center">
+                <a href="#" class="block w-full h-full p-2 pl-4 sm:p-2">Home</a>
+            </li>
+            <li
+                class="text-preto dark:text-branco hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto border-[1px] border-t-0 border-l-0 border-preto dark:border-branco sm:border-b-0 sm:border-l-[1px] sm:border-r-0 sm:min-w-[100px] sm:text-center">
+                <a href="#section_two" class="block w-full h-full p-2 pl-4 sm:p-2">Projetos</a>
+            </li>
+            <li
+                class="text-preto dark:text-branco hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto border-[1px] border-t-0 border-l-0 border-preto dark:border-branco sm:border-b-0 sm:border-l-[1px] sm:border-r-0 sm:min-w-[100px] sm:text-center">
+                <a href="#" class="block w-full h-full p-2 pl-4 sm:p-2">Contato</a>
+            </li>
+        </ul>
     </nav>
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 const menuIsHidden = ref(true)
 import ContactIcons from '../components/common/ContactIcons.vue'
 
-const isDark = ref()
-onMounted(()=>{
-    localStorage.setItem("theme", "light");
-})
+const isDark = ref(false)
+
 const darkMode = () => {
     if (document.documentElement.classList.contains("dark")) {
         document.documentElement.classList.remove('dark');
         localStorage.setItem("theme", "light");
-        isDark.value = true
+        isDark.value = false
     } else {
         document.documentElement.classList.add('dark');
         localStorage.setItem("theme", "dark")
-        isDark.value = false
+        isDark.value = true
     }
 }
 </script>
+
+<style scoped>
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#darkModeTransition {
+    animation: fadeout 3s;
+}
+</style>

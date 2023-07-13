@@ -1,6 +1,6 @@
 <template>
     <div class="max-w-[1311px] mx-auto flex flex-col gap-4">
-        <div class="flex min-w-[375px] relative md:border-2 border-preto border-2">
+        <div class="flex min-w-[375px] relative md:border-2 border-preto dark:border-branco border-2">
             <button @click="prev" class="bg-neutral-400 dark:bg-neutral-100 dark:bg-opacity-5 bg-opacity-5 hover:bg-opacity-20 md:bg-opacity-20 md:hover:bg-opacity-30 px-5 absolute md:grow min-h-full z-30 md:relative cursor-pointer"><svg
                     class="rotate-180 -ml-[5px] fill-preto dark:fill-branco stroke-branco dark:stroke-preto h-[30px] md:h-[50px]" viewBox="0 -1 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.0208 1H2L13.9792 13.5L2 26H15.0208L27 13.5L15.0208 1Z" />

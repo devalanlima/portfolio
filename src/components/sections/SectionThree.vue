@@ -1,6 +1,6 @@
 <template>
     <div class="relative mx-auto max-w-[1311px] pt-10" ref="el">
-        <div class="text-center md:text-right px-5 pb-10">
+        <div class="text-center md:text-right px-5 pb-0">
             <h3 class="sr-only">Contatos</h3>
             <span class="font-stretch text-[2.1rem] " :style="titleSize">CCONTATOS</span>
         </div>
@@ -35,7 +35,7 @@
                             :class="['absolute -top-4 text-sm font-roboto font-light text-red-600 dark:text-red-400', { 'hidden': mensagemIsValid }]">Mínimo
                             de 35 caractéres</label>
                         <textarea name="user_message" id="contact-message" cols="40" rows="3" required
-                            :class="['placeholder:dark:text-branco dark:text-branco dark:border-branco  bg-transparent font-roboto  text-preto placeholder:text-preto placeholder:font-light focus:outline-0 -mt-6 bg-[repeating-linear-gradient(#F8F8F8,#F8F8F8_50px,#0d0d0d_50px,#0d0d0d_52px,#F8F8F8_51px)] dark:bg-[repeating-linear-gradient(#0d0d0d,#0d0d0d_50px,#F8F8F8_50px,#F8F8F8_52px,#0d0d0d_51px)] h-[156px] bg-local leading-[51px] pt-[10px] resize-none w-full', { 'text-red-600 dark:text-red-400': !emailIsValid }]"
+                            :class="['placeholder:dark:text-branco dark:text-branco dark:border-branco  bg-transparent font-roboto  text-preto placeholder:text-preto placeholder:font-light focus:outline-0 -mt-6 bg-[repeating-linear-gradient(var(--color1),var(--color1)_50px,var(--color2)_50px,var(--color2)_52px,var(--color1)_51px)] dark:bg-[repeating-linear-gradient(var(--color2),var(--color2)_50px,var(--color1)_50px,var(--color1)_52px,var(--color2)_51px)] h-[156px] bg-local leading-[51px] pt-[10px] resize-none w-full', { 'text-red-600 dark:text-red-400': !emailIsValid }]"
                             v-model="suaMensagem" placeholder="Sua Mensagem"></textarea>
                     </li>
                     <li class="w-full max-w-[200px] xl:max-w-full">

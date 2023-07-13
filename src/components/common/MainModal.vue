@@ -24,7 +24,7 @@
             </div>
         </transition>
         <transition name="modal">
-            <div v-if="open" class="transition-opacity duration-300 ease-in w-full h-full bg-preto bg-opacity-80 fixed top-0 left-0 z-40"></div>
+            <div v-if="open" class="transition-opacity duration-300 ease-in w-full h-full bg-preto opacity-80 fixed top-0 left-0 z-40"></div>
         </transition>
     </teleport>
 </template>

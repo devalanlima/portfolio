@@ -8,9 +8,12 @@
     src: url("/fonts/StretchPro.woff2") format("woff2"),
       url("/fonts/StretchPro.woff") format("woff");
   }
-
+  :root {
+    --color1: #f8f8f8;
+    --color2: #0d0d0d;
+  }
   body {
-    @apply text-preto dark:text-branco bg-branco dark:bg-preto overflow-x-hidden;
+    @apply text-preto dark:text-branco bg-branco dark:bg-preto overflow-x-hidden transition-colors duration-200 ease-linear;
   }
   ::-webkit-scrollbar {
     @apply w-3;
@@ -32,12 +35,69 @@
   }
 
   ::selection {
-    @apply bg-neutral-500 text-branco ;
+    @apply bg-neutral-500 text-branco;
   }
 
   html {
-    scrollbar-color: #F8F8F8 #0d0d0d; 
+    scrollbar-color: #f8f8f8 #0d0d0d;
+  }
+
+  .dark {
+    --color1: #f8f8f8;
+    --color2: #0d0d0d;
+  }
+
+  .htmlIcon {
+    --color2: #F16529;
+    --color1: #f8f8f8;
+  }
+  .htmlIconDark {
+    --color2: #F16529;
+    --color1: #0d0d0d;
+  }
+
+  .cssIcon {
+    --color2: #29A8E0;
+    --color1: #f8f8f8;
+  }
+  .cssIconDark {
+    --color2: #29A8E0;
+    --color1: #0d0d0d;
+  }
+
+  .vueIcon {
+    --color2: #31475E;
+    --color1: #3FB984;
+  }
+  .vueIconDark {
+    --color2: #3FB984;
+    --color1: #31475E;
+  }
+
+  .javascriptIcon {
+    --color1: #F0DC55;
+    --color2: #0d0d0d;
+  }
+  .javascriptIconDark {
+    --color2: #F0DC55;
+    --color1: #0d0d0d;
+  }
+
+  .githubIcon {
+    --color2: #000000;
+    --color1: #FFFFFF;
+  }
+  .githubIconDark {
+    --color2: #FFFFFF;
+    --color1: #000000;
+  }
+
+  .tailwindIcon {
+    --color1: #29A8E0;
+    --color2: #f8f8f8;
+  }
+  .tailwindIconDark {
+    --color2: #29A8E0;
+    --color1: #0d0d0d;
   }
 }
-
-

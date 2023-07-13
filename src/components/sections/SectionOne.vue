@@ -7,7 +7,7 @@
                     </span></h2>
                 </div>
                 <p class="text-justify font-roboto" :style="paragraphSize">
-                    Meu nome é Alan Lima e sou um desenvolvedor júnior front-end. Tenho conhecimentos em <span class="font-bold">HTML</span>, <span class="font-bold">CSS</span>, <span class="font-bold">JavaScript</span> e <span class="font-bold">Vue.js</span>. Estou entusiasmado para trabalhar em projetos desafiadores e colaborar com equipes talentosas.
+                    Meu nome é Alan Lima e pretendo me tornar um desenvolvedor júnior front-end. Tenho conhecimentos em <span class="font-bold">HTML</span>, <span class="font-bold">CSS</span>, <span class="font-bold">JavaScript</span> e <span class="font-bold">Vue.js</span>. Estou entusiasmado para trabalhar em projetos desafiadores e colaborar com equipes talentosas.
                 </p>
             <KnowledgeIcons v-if="!(windowWidth < 768)" class="mt-5"/>
         </div>

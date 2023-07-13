@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        preto:'#0d0d0d',
-        branco:'#F8F8F8',
+        branco:'var(--color1)',
+        preto:'var(--color2)',
       },
       fontFamily:{
         stretch: ['Stretch', 'sans-serif'],
