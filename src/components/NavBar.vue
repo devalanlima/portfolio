@@ -119,11 +119,11 @@
             </li>
             <li
                 class="text-preto dark:text-branco hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto border-[1px] border-t-0 border-l-0 border-preto dark:border-branco sm:border-b-0 sm:border-l-[1px] sm:border-r-0 sm:min-w-[100px] sm:text-center">
-                <a href="#section_two" class="block w-full h-full p-2 pl-4 sm:p-2">Projetos</a>
+                <a href="#Projetos" class="block w-full h-full p-2 pl-4 sm:p-2">Projetos</a>
             </li>
             <li
                 class="text-preto dark:text-branco hover:bg-preto hover:text-branco dark:hover:bg-branco dark:hover:text-preto border-[1px] border-t-0 border-l-0 border-preto dark:border-branco sm:border-b-0 sm:border-l-[1px] sm:border-r-0 sm:min-w-[100px] sm:text-center">
-                <a href="#" class="block w-full h-full p-2 pl-4 sm:p-2">Contato</a>
+                <a href="#Contatos" class="block w-full h-full p-2 pl-4 sm:p-2">Contatos</a>
             </li>
         </ul>
     </nav>

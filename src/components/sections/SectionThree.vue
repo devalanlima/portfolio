@@ -1,6 +1,6 @@
 <template>
-    <div class="relative mx-auto max-w-[1311px] pt-10" ref="el">
-        <div class="text-center md:text-right px-5 pb-0">
+    <div class="relative mx-auto max-w-[1311px]" ref="el">
+        <div class="text-center md:text-right px-5">
             <h3 class="sr-only">Contatos</h3>
             <span class="font-stretch text-[2.1rem] " :style="titleSize">CCONTATOS</span>
         </div>

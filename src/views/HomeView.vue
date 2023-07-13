@@ -26,9 +26,9 @@ onMounted(() => {
     <NavBar class="w-full" />
   </header>
   <main :class="['w-screen overflow-hidden', {'pr-3' : !isMobile}]">
-    <SectionOne class="my-14 mt-20 px-5" />
-    <SectionTwo class="mt-14 mb-10" />
-    <SectionThree class="-mb-1 px-5" />
+    <SectionOne class="mt-14 px-4" />
+    <SectionTwo id="Projetos" class="mb-7 pt-10 md:pt-20 md:mb-14" />
+    <SectionThree id="Contatos" class=" md:pt-14 " />
   </main>
   <footer class="z-10 relative">
     <MainFooter />
