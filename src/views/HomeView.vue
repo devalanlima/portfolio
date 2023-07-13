@@ -42,7 +42,7 @@ onMounted(() => {
     <NavBar class="w-full" />
   </header>
   <main :class="['w-screen overflow-hidden', {'pr-3' : !isMobile}]">
-    <SectionOne class="my-14 mt-20 px-5" />
+    <SectionOne class="my-14 mt-20 px-5 xl:mb-28" />
     <SectionTwo class="my-14" />
     <SectionThree class="-mb-1 mt-0 px-5" />
   </main>
