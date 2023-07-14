@@ -109,7 +109,7 @@ const validateForm = () => {
     if (nomeIsValid.value && emailIsValid.value && mensagemIsValid.value) {
         return true
     } else {
-        alert('Algo deu errado, confira os campos e tente novamente')
+        alert('Algo deu errado, confira os campos do formulário e tente novamente')
         return false
     }
 }

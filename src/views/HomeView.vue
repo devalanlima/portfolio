@@ -28,7 +28,7 @@ onMounted(() => {
   <main :class="['w-screen overflow-hidden', {'pr-3' : !isMobile}]">
     <SectionOne class="mt-14 px-4" />
     <SectionTwo id="Projetos" class="mb-7 pt-10 md:pt-20 md:mb-14" />
-    <SectionThree id="Contatos" class=" md:pt-14 " />
+    <SectionThree id="Contatos" class=" md:pt-14 -mb-4" />
   </main>
   <footer class="z-10 relative">
     <MainFooter />
