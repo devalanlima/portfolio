@@ -1,5 +1,5 @@
 <template>
-    <article class="md:grid md:grid-cols-2 md:items-center justify-items-end max-w-[1311px] lg:py-10 mx-auto lg:grid-cols-2">
+    <article class="md:grid md:grid-cols-2 md:items-center justify-items-end max-w-[1311px] py-5 lg:py-10 mx-auto lg:grid-cols-2">
         <div class="mx-auto grow flex flex-col justify-around h-full gap-6 col-span-1 lg:col-span-1" ref="el">
                 <div class="flex justify-center md:justify-start">
                     <h2 class="font-stretch " :style="titleSize">DD<span>EV<AnimatedArrow :style="arrowsSize" class="ml-0 w-[146px]"/>

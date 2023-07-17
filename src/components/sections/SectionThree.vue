@@ -49,13 +49,13 @@
                     </li>
                 </ul>
                 <div
-                    class="font-roboto text-preto dark:text-branco flex flex-col mt-4 xl:mt-0 gap-2 w-full max-w-[202px] xl:self-start xl:place-self-end h-full justify-between font-light">
+                    class="font-roboto text-preto dark:text-branco flex flex-col mt-4 xl:mt-0 gap-2 w-full max-w-[202px] xl:self-start xl:place-self-end h-full pb-5 justify-around xl:pb-0 xl:justify-between font-light">
                     <div class="flex flex-col gap-2">
                         <p>21 99605-8924</p>
                         <p>devalanlima@gmail.com</p>
                     </div>
                     <p class="hidden xl:block"><span class="text-3xl">Morando em</span> Rio de Janeiro, Brasil</p>
-                    <ContactIcons class="mt-5 justify-between" />
+                    <ContactIcons class="justify-between" />
                 </div>
             </form>
         </div>
