@@ -31,7 +31,7 @@
             </a>
         </li>
         <li>
-            <a ref="cv" href="#" download="Alan Lima Currículo CV"></a>
+            <a ref="cv" href="/Alan-Lima-Curriculo.pdf" download="Alan-Lima-Curriculo"></a>
             <button type="button" @click="isOpen = !isOpen" class="cursor-pointer" title="Baixar Currículo">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" 
                     viewBox="0 0 487.000000 487.000000" preserveAspectRatio="xMidYMid meet" class="fill-preto dark:fill-branco w-[2.1rem] mt-[1px]">
