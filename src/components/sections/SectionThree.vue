@@ -10,9 +10,10 @@
             class="w-[110%] md:w-[100%] md:translate-x-1/2 ml-7 p-7 xl:p-10 mt-7 border-2 border-b-transparent border-preto dark:border-branco">
             <form
                 class="w-full gap-7 pr-7 xl:pr-0 max-w-[70vw] md:max-w-[43vw] xl:max-w-[550px] grid grid-cols-1 xl:grid-cols-2 xl:justify-between"
-                action="https://formsubmit.co/d508eed6ee546479cd0f3667fecc4fb5" method="POST" :onsubmit="validateForm">
+                action="https://formsubmit.co/d508eed6ee546479cd0f3667fecc4fb5" method="POST">
                 <input type="hidden" name="_captcha" value="false"> <!-- Disable reCAPTCHA -->
-                <input type="hidden" name="_next" value="https://devalanlima.github.io/portfolio/#Contatos"> <!-- alternative url -->
+                <input type="hidden" name="_next" value="https://devalanlima.github.io/portfolio/#Contatos">
+                <!-- alternative url -->
                 <ul class="flex flex-col gap-10 ">
                     <li class="relative">
                         <label for="contact-name"
@@ -40,10 +41,11 @@
                     </li>
                     <li class="w-full max-w-[200px] xl:max-w-full">
                         <div class="relative">
-                            <button title="Enviar formulário" type="submit" ref="enviarBtn"
+                            <button title="Enviar formulário" type="button" ref="enviarBtn" name="EnviarForm"
                                 class="relative transition-transform border-2 border-preto bg-branco dark:border-branco dark:bg-preto py-3 w-full font-roboto"
-                                @mousedown="downBtn" @mouseup="upBtn" @mouseleave="upBtn">Enviar
+                                @mousedown="downBtn" @mouseup="upBtn" @mouseleave="leaveBtn">Enviar
                             </button>
+                            <button ref="submitBtn" type="submit" class="hidden"></button>
                             <div class="w-full h-full bg-preto dark:bg-branco absolute top-0 left-0 mt-2 ml-2 -z-10"></div>
                         </div>
                     </li>
@@ -59,6 +61,12 @@
                 </div>
             </form>
         </div>
+        <MainModal 
+        :key="suaMensagem"
+        :is-open="isOpen"
+            :start-message="`Gostaria de enviar a mensagem: '${suaMensagem}'`"
+            confirm-message="O formulário será enviado" cancel-message="O envio do formulário foi cancelado"
+            @isConfirmed="handleConfirmed" />
 
     </div>
 </template>
@@ -66,14 +74,38 @@
 <script setup>
 import ContactIcons from '../common/ContactIcons.vue';
 import { ref, computed } from 'vue'
+import MainModal from '../common/MainModal.vue'
 
 const enviarBtn = ref(null)
 const downBtn = () => {
     enviarBtn.value.style.transform = ' translate(.5rem, .5rem)'
 }
+
+const isOpen = ref(false)
 const upBtn = () => {
     enviarBtn.value.style.transform = 'translate(0, 0)'
+    if (nomeIsValid.value && emailIsValid.value && mensagemIsValid.value && seuNome.value.length !== 0 && seuEmail.value.length !== 0 && suaMensagem.value.length !== 0) {
+        isOpen.value = !isOpen.value
+    } else {
+        alert('Verifique todos os campos e tente novamente')
+    }
 }
+
+const leaveBtn = ()=>{
+    enviarBtn.value.style.transform = 'translate(0, 0)' 
+}
+
+const submitBtn = ref(null)
+const handleConfirmed = (event)=>{
+    if(event){
+        setTimeout(() => {
+            submitBtn.value.click() 
+        }, 2000);
+    } else {
+
+    }
+}
+
 
 const seuNome = ref('')
 const nomeIsValid = computed(() => {
@@ -104,16 +136,6 @@ const mensagemIsValid = computed(() => {
         return false
     }
 })
-
-const validateForm = () => {
-    if (nomeIsValid.value && emailIsValid.value && mensagemIsValid.value) {
-        return true
-    } else {
-        alert('Algo deu errado, confira os campos do formulário e tente novamente')
-        return false
-    }
-}
-
 
 import { useElementSize } from '@vueuse/core'
 const el = ref(null)
