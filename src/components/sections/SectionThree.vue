@@ -1,5 +1,5 @@
 <template>
-    <div class="relative mx-auto max-w-[1311px]" ref="el">
+    <section class="relative mx-auto max-w-[1311px]" ref="el">
         <div class="text-center md:text-right px-5">
             <h3 class="sr-only">Contatos</h3>
             <span class="font-stretch text-[2.1rem] " :style="titleSize">CCONTATOS</span>
@@ -68,7 +68,7 @@
             confirm-message="O formulário será enviado" cancel-message="O envio do formulário foi cancelado"
             @isConfirmed="handleConfirmed" />
 
-    </div>
+    </section>
 </template>
 
 <script setup>

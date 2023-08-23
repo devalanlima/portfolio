@@ -1,5 +1,5 @@
 <template>
-    <article class="md:grid md:grid-cols-2 md:items-center justify-items-end max-w-[1311px] py-5 lg:py-10 mx-auto lg:grid-cols-2">
+    <section class="md:grid md:grid-cols-2 md:items-center justify-items-end max-w-[1311px] py-5 lg:py-10 mx-auto lg:grid-cols-2">
         <div class="mx-auto grow flex flex-col justify-around h-full gap-6 col-span-1 lg:col-span-1" ref="el">
                 <div class="flex justify-center md:justify-start">
                     <h2 class="font-stretch " :style="titleSize">DD<span>EV<AnimatedArrow :style="arrowsSize" class="ml-0 w-[146px]"/>
@@ -15,7 +15,7 @@
             <AlanImage class="mt-6 mx-auto w-full max-w-[490px] h-fit fill-preto dark:fill-branco md:m-0  "/>
             <KnowledgeIcons v-if="windowWidth < 768" class="max-w-[490px] mx-auto"/>
         </div>     
-    </article>
+    </section>
 </template>
 
 <script setup>
