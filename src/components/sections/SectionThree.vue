@@ -10,7 +10,7 @@
             class="w-[110%] md:w-[100%] md:translate-x-1/2 ml-7 p-7 xl:p-10 mt-7 border-2 border-b-transparent border-preto dark:border-branco">
             <form
                 class="w-full gap-7 pr-7 xl:pr-0 max-w-[70vw] md:max-w-[43vw] xl:max-w-[550px] grid grid-cols-1 xl:grid-cols-2 xl:justify-between"
-                action="https://formsubmit.co/d508eed6ee546479cd0f3667fecc4fb5" method="POST">
+                action="https://formsubmit.co/devalanlima@gmail.com" method="POST">
                 <input type="hidden" name="_captcha" value="false"> <!-- Disable reCAPTCHA -->
                 <input type="hidden" name="_next" value="https://devalanlima.github.io/portfolio/#Contatos">
                 <!-- alternative url -->
