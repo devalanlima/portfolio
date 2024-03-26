@@ -8,13 +8,8 @@
         <HipnoCircle class="hidden md:flex absolute left-5  top-1/2 -translate-y-1/2" />
         <div
             class="w-[110%] md:w-[100%] md:translate-x-1/2 ml-7 p-7 xl:p-10 mt-7 border-2 border-b-transparent border-preto dark:border-branco">
-            <form
-                class="w-full gap-7 pr-7 xl:pr-0 max-w-[70vw] md:max-w-[43vw] xl:max-w-[550px] grid grid-cols-1 xl:grid-cols-2 xl:justify-between"
-                action="https://formsubmit.co/devalanlima@gmail.com" method="POST">
-                <input type="hidden" name="_captcha" value="false"> <!-- Disable reCAPTCHA -->
-                <input type="hidden" name="_next" value="https://devalanlima.github.io/portfolio/#Contatos">
-                <!-- alternative url -->
-                <ul class="flex flex-col gap-10 ">
+            <div class="w-full gap-7 pr-7 xl:pr-0 max-w-[70vw] md:max-w-[43vw]  grid grid-cols-1 xl:grid-cols-2 xl:justify-between">
+                <!-- <ul class="flex flex-col gap-10 ">
                     <li class="relative">
                         <label for="contact-name"
                             :class="['absolute -top-4 text-sm font-roboto font-light text-red-600 dark:text-red-400', { 'hidden': nomeIsValid }]">Mínimo
@@ -49,17 +44,17 @@
                             <div class="w-full h-full bg-preto dark:bg-branco absolute top-0 left-0 mt-2 ml-2 -z-10"></div>
                         </div>
                     </li>
-                </ul>
+                </ul> -->
                 <div
-                    class="font-roboto text-preto dark:text-branco flex flex-col mt-4 xl:mt-0 gap-2 w-full max-w-[202px] xl:self-start xl:place-self-end h-full pb-5 justify-around xl:pb-0 xl:justify-between font-light">
+                    class="font-roboto text-preto dark:text-branco flex flex-col mt-4 xl:mt-0 gap-10 w-full  xl:self-start xl:place-self-end h-full pb-5 justify-around xl:pb-0 xl:justify-between">
                     <div class="flex flex-col gap-2">
-                        <p>21 99605-8924</p>
-                        <p>devalanlima@gmail.com</p>
+                        <p>Telefone: 21 99605-8924</p>
+                        <p>E-mail: devalanlima@gmail.com</p>
                     </div>
-                    <p class="hidden xl:block"><span class="text-3xl">Morando em</span> Rio de Janeiro, Brasil</p>
-                    <ContactIcons class="justify-between" />
+                    <p class="hidden xl:block max-w-[200px]"><span class="text-3xl">Morando em</span> Rio de Janeiro, Brasil</p>
+                    <ContactIcons class="justify-between max-w-[202px]" />
                 </div>
-            </form>
+            </div>
         </div>
         <MainModal 
         :key="suaMensagem"
