@@ -23,7 +23,13 @@ export default {
       'photoshop-1': 'rgb(var(--photoshop-1))',
       'photoshop-2': 'rgb(var(--photoshop-2))',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        AbrilFatface: ["Abril Fatface", "serif"],
+        CourierPrime: ["Courier Prime", "monospace"],
+        DelaGothicOne: ["Dela Gothic One", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }
