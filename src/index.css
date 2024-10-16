@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root{
+        --primary-color: 20 20 20;
+        --secondary-color: 250 250 250;
+        --white: 255 255 255;
+        --black: 0 0 0;
+        --typescript: 11 126 206;
+        --javascript: 248 221 68;
+        --vue-1: 71 186 135;
+        --vue-2: 59 79 99;
+        --react: 8 217 254;
+        --tailwindcss: 62 191 248;
+        --html: 229 83 45;
+        --css: 20 118 188;
+        --git-1: 240 86 57;
+        --git-2: 71 54 8;        
+        --photoshop-1: 0 28 37;
+        --photoshop-2: 0 194 247;
+    }
+}
