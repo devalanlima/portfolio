@@ -1,23 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import PagesHome from './Components/Pages/PagesHome';
-import PagesContatos from './Components/Pages/PagesContatos';
-import PagesProjetos from './Components/Pages/PagesProjetos';
+import { routes } from './Routes/routes';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <PagesHome />,
-    errorElement: <PagesHome />,
-  },
-  {
-    path: '/contatos',
-    element: <PagesContatos />,
-  },
-  {
-    path: '/projetos',
-    element: <PagesProjetos />,
-  },
-]);
+const router = createBrowserRouter(routes);
 
 export default function App() {
   return <RouterProvider router={router} />;
