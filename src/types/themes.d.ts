@@ -11,3 +11,4 @@ export type Themes =
 | 'git'
 | 'photoshop'
 | 'figma'
+| 'github'
