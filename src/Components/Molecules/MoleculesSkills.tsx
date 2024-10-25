@@ -1,10 +1,12 @@
+import { Themes } from '../../types/themes';
 import AtomsChip from '../Atoms/AtomsChip';
 
 interface Props {
-  skills: Array<string>;
+  skills: Array<Themes>;
+  color?: boolean;
 }
 
-export default function MoleculesSkills({ skills }: Props) {
+export default function MoleculesSkills({ skills, color }: Props) {
   const handleOnMouseEnter = (theme: string) => {
     document.documentElement.className = theme;
   };
@@ -22,9 +24,7 @@ export default function MoleculesSkills({ skills }: Props) {
           onMouseEnter={() => handleOnMouseEnter(skill)}
           onMouseLeave={handleOnMouseLeave}
         >
-          <AtomsChip
-            children={skill.charAt(0).toUpperCase() + skill.slice(1)}
-          />
+          <AtomsChip skill={skill} color={color} />
         </li>
       ))}
     </ul>
