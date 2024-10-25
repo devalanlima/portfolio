@@ -34,7 +34,7 @@ export default function OrganismsFooter() {
         <ul className="flex gap-4">
           {links.map(link => {
             return (
-              <li>
+              <li key={link.name}>
                 <Link
                   to={link.url}
                   target="_blank"
