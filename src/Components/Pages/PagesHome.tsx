@@ -25,7 +25,7 @@ export default function PagesHome() {
       <main className="px-4 py-6 flex flex-col gap-6">
         <section className="flex flex-col gap-6">
           <AtomsHeader smallText="DESENVOLVEDOR" bigText="FRONT-END" />
-          <AtomsParagraph>
+          <AtomsParagraph className="text-justify">
             Meu nome é Alan Lima, sou formado em Automação Industrial e Técnico
             em Eletrônica, com uma paixão crescente por desenvolvimento web.
             Atualmente, estou cursando Análise e Desenvolvimento de Sistemas e
