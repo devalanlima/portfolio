@@ -12,13 +12,13 @@ export const routes: Array<RouteObject> = [
     errorElement: <PagesNotFound />,
   },
   {
-    id: 'Contatos',
-    path: '/contatos',
-    element: <PagesContatos />,
-  },
-  {
     id: 'Projetos',
     path: '/projetos',
     element: <PagesProjetos />,
+  },
+  {
+    id: 'Contatos',
+    path: '/contatos',
+    element: <PagesContatos />,
   },
 ];
