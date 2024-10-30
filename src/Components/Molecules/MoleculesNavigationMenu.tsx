@@ -36,7 +36,7 @@ export default function MoleculesNavigationMenu({ routes }: Props) {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative z-50">
       <AtomsOutlinedButton onClick={toggleMenuView} aria-expanded={isMenuOpen}>
         <MenuIcon className="w-[28px] h-[28px]" />
       </AtomsOutlinedButton>
