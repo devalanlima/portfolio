@@ -4,7 +4,11 @@ import IconsMoon from '../Icons/IconsMoon';
 import IconsSun from '../Icons/IconsSun';
 import { Themes } from '../../types/themes';
 
-export default function MoleculesDarkModeButton() {
+interface Props {
+  className?: string;
+}
+
+export default function MoleculesDarkModeButton({ className }: Props) {
   const getInitialTheme = (): Themes => {
     const storedTheme = localStorage.getItem('theme') as Themes;
     return storedTheme
@@ -28,7 +32,7 @@ export default function MoleculesDarkModeButton() {
   }, [isDarkMode]);
 
   return (
-    <AtomsOutlinedButton onClick={toggleTheme}>
+    <AtomsOutlinedButton className={className} onClick={toggleTheme}>
       {isDarkMode ? (
         <IconsSun className="w-[28px] h-[28px]" />
       ) : (
