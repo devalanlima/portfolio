@@ -34,9 +34,9 @@ export default function MoleculesDarkModeButton({ className }: Props) {
   return (
     <AtomsOutlinedButton className={className} onClick={toggleTheme}>
       {isDarkMode ? (
-        <IconsSun className="w-[28px] h-[28px]" />
+        <IconsSun className="h-[28px] w-[28px]" />
       ) : (
-        <IconsMoon className="w-[28px] h-[28px]" />
+        <IconsMoon className="h-[28px] w-[28px]" />
       )}
     </AtomsOutlinedButton>
   );

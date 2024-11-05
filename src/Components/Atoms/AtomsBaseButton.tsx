@@ -40,7 +40,7 @@ export default function AtomsBaseButton({
       onMouseLeave={handleMouseLeave}
       {...rest}
       className={twMerge(
-        `border-2 border-primary bg-primary relative  z-0 after:bg-secondary after:absolute after:w-full after:h-full after:-z-10 after:outline after:outline-2 after:outline-primary ${btnStyle}`,
+        `relative z-0 border-2 border-primary bg-primary after:absolute after:-z-10 after:h-full after:w-full after:bg-secondary after:outline after:outline-2 after:outline-primary ${btnStyle}`,
         className
       )}
     >

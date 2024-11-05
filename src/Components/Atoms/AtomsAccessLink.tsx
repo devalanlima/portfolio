@@ -22,14 +22,14 @@ export default function AtomsAccessLink({ text, url }: Props) {
       to={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center group cursor-pointer gap-1"
+      className="group flex cursor-pointer items-center gap-1"
       onMouseEnter={handleOnMouseEnter}
       onMouseLeave={handleOnMouseLeave}
     >
-      <span className="group-hover:underline font-CourierPrime group-hover:font-bold mt-1">
+      <span className="mt-1 font-CourierPrime group-hover:font-bold group-hover:underline">
         {text}
       </span>
-      <LinkIcon className="rotate-90 h-[30px] w-[30px]" />
+      <LinkIcon className="h-[30px] w-[30px] rotate-90" />
     </Link>
   );
 }

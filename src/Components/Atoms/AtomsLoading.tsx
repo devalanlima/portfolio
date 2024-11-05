@@ -12,9 +12,9 @@ export default function AtomsLoading({ isLoading }: Props) {
   }, [isLoading]);
 
   return (
-    <dialog ref={$dialog} className="p-3 bg-secondary/0 ">
+    <dialog ref={$dialog} className="bg-secondary/0 p-3">
       <span className="sr-only">Loading</span>
-      <div className="border-4 border-t-secondary/0 border-primary animate-spin w-[50px] h-[50px] rounded-full"></div>
+      <div className="h-[50px] w-[50px] animate-spin rounded-full border-4 border-primary border-t-secondary/0"></div>
     </dialog>
   );
 }

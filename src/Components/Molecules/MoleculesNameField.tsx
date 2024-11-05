@@ -24,7 +24,7 @@ export default function MoleculesNameField({
     return (
       !isInputNameValid() &&
       inputName.length !== 0 && (
-        <span className="text-[#ff0c0c] font-CourierPrime">
+        <span className="font-CourierPrime text-[#ff0c0c]">
           Minimo de 3 caractéres
         </span>
       )

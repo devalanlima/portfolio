@@ -5,7 +5,7 @@ import TemplatesMain from '../Templates/TemplatesMain';
 export default function PagesNotFound() {
   return (
     <TemplatesMain>
-      <div className="flex flex-col gap-5 m-3 text-primary transition-colors ease-in-out duration-200">
+      <div className="m-3 flex flex-col gap-5 text-primary transition-colors duration-200 ease-in-out">
         <h2 className="text-2xl text-[#FF0000]">Error 404</h2>
         <p>
           A página que você procura não existe, para onde você gostaria de ir?
@@ -16,9 +16,9 @@ export default function PagesNotFound() {
               route.path && (
                 <li
                   key={route.path}
-                  className="hover:underline underline-offset-2"
+                  className="underline-offset-2 hover:underline"
                 >
-                  <Link className="py-1 flex" to={route.path}>
+                  <Link className="flex py-1" to={route.path}>
                     {route.id}
                   </Link>
                 </li>

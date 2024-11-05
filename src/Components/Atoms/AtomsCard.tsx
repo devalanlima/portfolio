@@ -9,7 +9,7 @@ export default function AtomsCard({ children, className }: Props) {
   return (
     <div
       className={twMerge(
-        'border-2 border-primary bg-primary relative p-3 z-0 after:bg-secondary after:absolute  after:top-0 after:left-0 after:w-full after:h-full after:rounded-3xl after:-z-10',
+        'relative z-0 border-2 border-primary bg-primary p-3 after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-full after:rounded-3xl after:bg-secondary',
         className
       )}
     >

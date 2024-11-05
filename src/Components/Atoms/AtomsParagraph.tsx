@@ -14,7 +14,7 @@ export default function AtomsParagraph({
     <p
       {...rest}
       className={twMerge(
-        'text-sm font-CourierPrime text-primary leading-4',
+        'font-CourierPrime text-sm leading-4 text-primary',
         className
       )}
     >

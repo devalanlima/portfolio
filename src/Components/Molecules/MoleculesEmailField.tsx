@@ -25,7 +25,7 @@ export default function MoleculesEmailField({
     return (
       !isInputEmailValid() &&
       inputEmail.length !== 0 && (
-        <span className="text-[#ff0c0c] font-CourierPrime">
+        <span className="font-CourierPrime text-[#ff0c0c]">
           Insira um e-mail válido
         </span>
       )

@@ -22,7 +22,7 @@ export default function PagesHome() {
 
   return (
     <TemplatesMain>
-      <main className="px-4 py-6 flex flex-col gap-6">
+      <main className="flex flex-col gap-6 px-4 py-6">
         <section className="flex flex-col gap-6">
           <AtomsHeader smallText="DESENVOLVEDOR" bigText="FRONT-END" />
           <AtomsParagraph className="text-justify">

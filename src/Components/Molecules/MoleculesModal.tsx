@@ -25,7 +25,7 @@ export default function MoleculesModal({
 
   return (
     <dialog ref={$dialog}>
-      <AtomsCard className="flex flex-col gap-6 text-primary p-6">
+      <AtomsCard className="flex flex-col gap-6 p-6 text-primary">
         {message}
         <AtomsOutlinedButton
           className="self-center px-4"

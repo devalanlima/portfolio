@@ -9,9 +9,9 @@ import AtomsParagraph from '../Atoms/AtomsParagraph';
 export default function PagesContatos() {
   return (
     <TemplatesMain>
-      <main className="px-4 py-6 flex flex-col gap-6 overflow-x-hidden">
+      <main className="flex flex-col gap-6 overflow-x-hidden px-4 py-6">
         <AtomsHeader smallText="MEUS" bigText="CONTATOS" />
-        <AtomsCard className="w-[calc(100vw_+10px)] p-7 pr-14 flex flex-col gap-6">
+        <AtomsCard className="flex w-[calc(100vw_+10px)] flex-col gap-6 p-7 pr-14">
           <OrganismsContactForm />
           <AtomsParagraph className="text-base">(21) 99605-8924</AtomsParagraph>
           <AtomsParagraph className="text-base">

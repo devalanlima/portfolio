@@ -18,7 +18,7 @@ export default function MoleculesMyLinks({ links }: Props) {
                 rel="noopener noreferrer"
                 title={link.name}
               >
-                {<link.icon className="w-[30px] h-[30px]" />}
+                {<link.icon className="h-[30px] w-[30px]" />}
               </Link>
             </li>
           );

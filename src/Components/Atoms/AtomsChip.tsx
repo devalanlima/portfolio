@@ -26,7 +26,7 @@ export default function AtomsChip({ skill = 'dark', color = false }: Props) {
   return (
     <div
       className={twMerge(
-        'px-3 flex py-1 bg-primary outline-secondary text-secondary hover:bg-secondary hover:text-primary hover:outline-primary rounded-full w-fit font-CourierPrime text-xs leading-none outline-2 font-bold outline cursor-pointer hover:scale-105',
+        'flex w-fit cursor-pointer rounded-full bg-primary px-3 py-1 font-CourierPrime text-xs font-bold leading-none text-secondary outline outline-2 outline-secondary hover:scale-105 hover:bg-secondary hover:text-primary hover:outline-primary',
         color && chipStyle[skill]
       )}
     >

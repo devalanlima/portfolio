@@ -12,7 +12,7 @@ export default function AtomsOutlinedButton({
 }: Props) {
   return (
     <button
-      className={twMerge('outline outline-2 outline-primary p-2', className)}
+      className={twMerge('p-2 outline outline-2 outline-primary', className)}
       {...rest}
     >
       {children}

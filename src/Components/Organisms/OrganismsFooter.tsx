@@ -3,7 +3,7 @@ import MoleculesMyLinks from '../Molecules/MoleculesMyLinks';
 
 export default function OrganismsFooter() {
   return (
-    <footer className="w-full outline outline-2 outline-primary flex justify-center items-center p-3">
+    <footer className="flex w-full items-center justify-center p-3 outline outline-2 outline-primary">
       <MoleculesMyLinks links={links} />
     </footer>
   );

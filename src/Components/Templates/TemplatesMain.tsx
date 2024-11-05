@@ -9,7 +9,7 @@ interface Props {
 export default function TemplatesMain({ children }: Props) {
   const atualRoute = useLocation();
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col">
       <OrganismsHeader />
       <div className="flex-grow">{children}</div>
       {atualRoute.pathname !== '/contatos' && <OrganismsFooter />}

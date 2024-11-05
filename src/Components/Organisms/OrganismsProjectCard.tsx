@@ -17,7 +17,7 @@ export default function OrganismsProjectCard({ project }: Props) {
   };
 
   const ProjectHeader = () => (
-    <header className="flex w-full justify-between items-center">
+    <header className="flex w-full items-center justify-between">
       <h3 className="font-DelaGothicOne text-xl">{project.name}</h3>
       <AtomsAccessLink url={project.url} text="Acesse" />
     </header>
@@ -43,8 +43,8 @@ export default function OrganismsProjectCard({ project }: Props) {
   );
 
   return (
-    <AtomsCard className="flex flex-col gap-3 max-w-[500px]">
-      <article className="flex justify-between items-center px-3 text-primary flex-col gap-3">
+    <AtomsCard className="flex max-w-[500px] flex-col gap-3">
+      <article className="flex flex-col items-center justify-between gap-3 px-3 text-primary">
         <ProjectHeader />
         <img src={project.image} alt={`${project.name} project screenshot`} />
         <MoleculesSkills skills={project.skills} color={true} />
