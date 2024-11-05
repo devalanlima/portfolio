@@ -41,17 +41,14 @@ export default function MoleculesNavigationMenu({ routes }: Props) {
         <MenuIcon className="w-[28px] h-[28px]" />
       </AtomsOutlinedButton>
       {isMenuOpen && (
-        <nav
-          ref={navRef}
-          className="text-primary font-CourierPrime text-lg absolute top-[calc(100%_+2px)] left-0"
-        >
+        <nav ref={navRef} className="absolute top-[calc(100%_+2px)] left-0">
           <ul className="flex flex-col gap-[2px]">
             {routes.map(
               route =>
                 route.path && (
                   <li
                     key={route.path}
-                    className="outline outline-2 outline-primary bg-secondary"
+                    className="outline outline-2 outline-primary bg-secondary hover:bg-primary text-primary hover:text-secondary font-CourierPrime text-lg"
                   >
                     <Link className="px-4 py-1 flex" to={route.path}>
                       {route.id}
