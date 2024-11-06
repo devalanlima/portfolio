@@ -1,5 +1,5 @@
 import AtomsCard from '../Atoms/AtomsCard';
-import AtomsHeader from '../Atoms/AtomsHeader';
+import AtomsTitle from '../Atoms/AtomsTitle';
 import MoleculesMyLinks from '../Molecules/MoleculesMyLinks';
 import OrganismsContactForm from '../Organisms/OrganismsContactForm';
 import TemplatesMain from '../Templates/TemplatesMain';
@@ -10,7 +10,7 @@ export default function PagesContatos() {
   return (
     <TemplatesMain>
       <main className="flex flex-col gap-6 overflow-x-hidden px-4 py-6">
-        <AtomsHeader smallText="MEUS" bigText="CONTATOS" />
+        <AtomsTitle smallText="MEUS" bigText="CONTATOS" />
         <AtomsCard className="flex w-[calc(100vw_+10px)] flex-col gap-6 p-7 pr-14">
           <OrganismsContactForm />
           <AtomsParagraph className="text-base">(21) 99605-8924</AtomsParagraph>
