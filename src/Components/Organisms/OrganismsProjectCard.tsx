@@ -25,20 +25,24 @@ export default function OrganismsProjectCard({ project }: Props) {
 
   const ProjectDescription = () => (
     <div className="max-h-[300px] overflow-y-auto text-justify">
-      <AtomsParagraph>
-        {!isParagraphOpen
-          ? project.description.substring(0, 80) + '... '
-          : project.description + ' '}
-        <button
-          aria-label={
-            isParagraphOpen ? 'Ver menos descrição' : 'Ver mais descrição'
-          }
-          className="font-bold"
-          onClick={toggleParagraphView}
-        >
-          {isParagraphOpen ? 'ver menos' : 'ver mais'}
-        </button>
-      </AtomsParagraph>
+      {project.description.length >= 150 ? (
+        <AtomsParagraph>
+          {!isParagraphOpen
+            ? project.description.substring(0, 150) + '... '
+            : project.description + ' '}
+          <button
+            aria-label={
+              isParagraphOpen ? 'Ver menos descrição' : 'Ver mais descrição'
+            }
+            className="font-bold"
+            onClick={toggleParagraphView}
+          >
+            {isParagraphOpen ? 'ver menos' : 'ver mais'}
+          </button>
+        </AtomsParagraph>
+      ) : (
+        <AtomsParagraph>{project.description}</AtomsParagraph>
+      )}
     </div>
   );
 
