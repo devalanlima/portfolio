@@ -43,7 +43,7 @@ export default function OrganismsProjectCard({ project }: Props) {
   );
 
   return (
-    <AtomsCard className="flex max-w-[500px] flex-col gap-3">
+    <AtomsCard className="flex flex-col gap-3">
       <article className="flex flex-col items-center justify-between gap-3 px-3 text-primary">
         <ProjectHeader />
         <img src={project.image} alt={`${project.name} project screenshot`} />
