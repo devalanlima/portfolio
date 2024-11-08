@@ -7,7 +7,10 @@ export default function OrganismsHeader() {
   return (
     <header className="outline outline-2 outline-primary">
       <div className="mx-auto flex max-w-[1300px] items-center justify-between sm:px-5 md:py-2">
-        <MoleculesNavigationMenu className="sm:order-1" routes={routes} />
+        <MoleculesNavigationMenu
+          className="sm:order-1 lg:pr-20"
+          routes={routes}
+        />
 
         <AtomsTitleName className="sm:order-0">ALAN LIMA</AtomsTitleName>
 
