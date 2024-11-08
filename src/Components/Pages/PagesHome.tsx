@@ -25,7 +25,7 @@ export default function PagesHome() {
 
   return (
     <TemplatesMain>
-      <main className="grid place-items-center gap-6 px-4 py-6 md:grid-cols-2">
+      <main className="grid w-full place-items-center gap-6 px-4 py-6 md:grid-cols-2">
         <div className="flex max-w-[500px] flex-col gap-6 md:gap-10 lg:max-w-[650px]">
           <section className="flex flex-col gap-6 md:gap-10">
             <AtomsTitle smallText="DESENVOLVEDOR" bigText="FRONT-END" />
