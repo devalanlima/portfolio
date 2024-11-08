@@ -90,7 +90,7 @@ export default function OrganismsContactForm() {
       />
 
       <form
-        className="flex flex-col gap-10 text-primary"
+        className="flex flex-col gap-10 text-primary sm:text-lg sm:leading-5 lg:text-xl"
         acceptCharset="utf-8"
         action="https://formspree.io/f/xeoqevqp"
         method="POST"
