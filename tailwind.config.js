@@ -27,6 +27,15 @@ export default {
         CourierPrime: ['Courier Prime', 'monospace'],
         DelaGothicOne: ['Dela Gothic One', 'sans-serif'],
       },
+      animation: {
+        'spiral-animation': 'scaleCircle 20s infinite linear',
+      },
+      keyframes: {
+        scaleCircle: {
+          '0%': { height: '0%' },
+          '100%': { height: '300%' },
+        },
+      },
     },
   },
   plugins: [],
