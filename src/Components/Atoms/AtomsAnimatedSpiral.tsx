@@ -24,7 +24,10 @@ export default function AtomsAnimatedSpiral() {
       {Array.from({ length: circleNumbers }, (_, index) => (
         <div
           key={index}
-          className={`animate-spiral-animation border-preto absolute aspect-square h-[150%] rounded-full border-[20px] border-primary`}
+          className={`animate-spiral-animation border-preto absolute aspect-square h-0 rounded-full border-[20px] border-primary`}
+          style={{
+            height: `${95 * index}px`,
+          }}
         ></div>
       ))}
     </div>
