@@ -24,7 +24,7 @@ export default function OrganismsProjectCard({ project }: Props) {
   );
 
   const ProjectDescription = () => (
-    <div className="max-h-[300px] overflow-y-auto text-justify">
+    <div className="max-h-[300px] overflow-y-auto px-2 text-justify md:px-5">
       {project.description.length >= 150 ? (
         <AtomsParagraph>
           {!isParagraphOpen
@@ -48,7 +48,9 @@ export default function OrganismsProjectCard({ project }: Props) {
 
   return (
     <AtomsCard className="flex flex-col gap-3">
-      <article className="flex flex-col items-center justify-between gap-3 px-3 text-primary">
+      <article
+        className={`flex flex-col items-center justify-between gap-3 px-3 text-primary ${isParagraphOpen ? 'max-h-[800px]' : 'max-h-[460px]'}`}
+      >
         <ProjectHeader />
         <img src={project.image} alt={`${project.name} project screenshot`} />
         <MoleculesSkills skills={project.skills} color={true} />
