@@ -1,6 +1,6 @@
 import AtomsTitle from '../Atoms/AtomsTitle';
 import TemplatesMain from '../Templates/TemplatesMain';
-import { projects } from '../../data/projects';
+import projects from '../../data/projects';
 import OrganismsProjectCard from '../Organisms/OrganismsProjectCard';
 
 export default function PagesProjetos() {
