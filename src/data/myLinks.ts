@@ -22,7 +22,7 @@ export const links: Array<LinkIcon> = [
   },
   {
     name: 'curriculo',
-    url: '/Alan-Lima-Curriculo.pdf',
+    url: 'https://devalanlima.github.io/portfolio/assets/Alan-Lima-Curriculo.pdf',
     icon: IconsFilePDF,
   },
 ];

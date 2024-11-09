@@ -4,7 +4,7 @@ const projects: Array<Project> = [
   {
     name: 'Bingo!',
     url: 'https://bingotestefront.netlify.app/',
-    image: '/bingo.png',
+    image: '/assets/bingo.png',
     skills: [
       'javascript',
       'html',
@@ -16,7 +16,7 @@ const projects: Array<Project> = [
   {
     name: 'Modern House',
     url: 'https://modernrlshouse.netlify.app/',
-    image: '/modernhouse.png',
+    image: '/assets/modernhouse.png',
     skills: [
       'javascript',
       'html',
@@ -28,7 +28,7 @@ const projects: Array<Project> = [
   {
     name: 'Travel Equator',
     url: 'https://equatortravelwebsite.netlify.app/',
-    image: '/equator.png',
+    image: '/assets/equator.png',
     skills: [
       'vue',
       'javascript',
@@ -44,7 +44,7 @@ const projects: Array<Project> = [
   {
     name: 'PokePlace',
     url: 'https://pokeplace.netlify.app/',
-    image: '/pokeplace.png',
+    image: '/assets/pokeplace.png',
     skills: [
       'vue',
       'javascript',
@@ -61,7 +61,7 @@ const projects: Array<Project> = [
   {
     name: 'Seriatonando',
     url: 'https://seriatonando.netlify.app/pt-BR/trending',
-    image: '/seriatonando.png',
+    image: '/assets/seriatonando.png',
     skills: [
       'vue',
       'typescript',
@@ -77,7 +77,7 @@ const projects: Array<Project> = [
   {
     name: 'To-Do Timer',
     url: 'https://todowithcountdown.netlify.app/',
-    image: '/todotimer.png',
+    image: '/assets/todotimer.png',
     skills: [
       'vue',
       'typescript',
@@ -92,7 +92,7 @@ const projects: Array<Project> = [
   {
     name: 'Pescaria Digital',
     url: 'https://choke7pescaria.netlify.app/',
-    image: '/pescariaDigital.png',
+    image: '/assets/pescariaDigital.png',
     skills: [
       'vue',
       'typescript',
@@ -108,7 +108,7 @@ const projects: Array<Project> = [
   {
     name: 'Button Ui Kit',
     url: 'https://free-responsive-button-ui-kit-react.netlify.app/',
-    image: 'buttonUI.png',
+    image: '/assets/buttonUI.png',
     skills: [
       'react',
       'typescript',
@@ -124,7 +124,7 @@ const projects: Array<Project> = [
   {
     name: 'Portfolio React',
     url: 'https://devalanlima.github.io/portfolio/',
-    image: '/portfolioMockup.png',
+    image: '/assets/portfolioMockup.png',
     skills: [
       'react',
       'typescript',
