@@ -52,6 +52,7 @@ export default function MoleculesNavigationMenu({ routes, className }: Props) {
         <ul className="flex flex-col gap-[2px] sm:flex-row">
           {routes.map(
             route =>
+              route.id &&
               route.path && (
                 <li
                   key={route.path}
