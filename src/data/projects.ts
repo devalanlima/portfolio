@@ -11,7 +11,7 @@ const projects: Array<Project> = [
       'css'
     ],
     description:
-      `26/02/2023 - Primeira vez que criei algo do zero. Um amigo meu que é desenvolvedor estava desenvolvendo um projeto e precisava recriar um bingo, mas estava com dificuldade para encontrar o design, então eu fiz esse projeto e mostrei pra ele, utilizei sombras e movimento pra parecer que existem elementos 3D mas é tudo 2D, ele gostou tanto que replicou o design no projeto dele.`,
+      `26/02/2023 - Foi a primeira vez que criei algo do zero. Um amigo meu, que é desenvolvedor, estava trabalhando em um projeto e precisava recriar um bingo, mas estava com dificuldade para encontrar um design adequado. Então, fiz este projeto e mostrei para ele. Utilizei sombras e movimento para dar a impressão de elementos 3D, embora tudo seja em 2D. Ele gostou tanto que acabou replicando o design no projeto dele.`,
   },
   {
     name: 'Modern House',
@@ -39,7 +39,7 @@ const projects: Array<Project> = [
       'github',
     ],
     description:
-      `15/06/2023 - Encontrei um design e achei muito bonito, então resolvi criar essa página replicando ele, o maior desafio foi que era apenas uma imagem, então tive que criar os componentes apenas no visual, também continha um mapa interativo que lembro ter me dado um certo trabalho para funcionar da maneira que eu queria.`,
+      `15/06/2023 - Encontrei um design que achei muito bonito, então resolvi criar uma página o replicando. O maior desafio foi que eu tinha apenas uma imagem como referência, então precisei criar os componentes apenas com base no visual. Além disso, havia um mapa interativo, que me deu um certo trabalho para funcionar da maneira que eu queria.`,
   },
   {
     name: 'PokePlace',
@@ -56,7 +56,7 @@ const projects: Array<Project> = [
       'photoshop'
     ],
     description:
-      `18/08/2023 - Estava procurando projetos para aprender a utilizar API's e só apareciam pokedex, resolvi dar uma variada e encontrei essa API de cartas, então criei um "marketplace" de cartas NFT e adicionei esse efeito de movimentação 3D, que apesar de existirem inumeros parecidos na internet, eu me desafiei a criar sozinho e me orgulho muito de ter conseguido.`,
+      `18/08/2023 - Estava procurando projetos para aprender a usar APIs, mas só encontrava exemplos de Pokédex. Resolvi variar um pouco e encontrei essa API do jogo de cartas, então criei um "marketplace" de cartas NFT e adicionei esse efeito de movimentação 3D, que apesar de existirem inumeros parecidos na internet, me desafiei a criar sozinho e me orgulho muito de ter conseguido.`,
   },
   {
     name: 'Seriatonando',
@@ -72,7 +72,7 @@ const projects: Array<Project> = [
       'figma',
     ],
     description:
-      "12/12/2023 - Adoro filmes e séries, tenho mais de 900 filmes assistidos no letterboxd, então resolvi unir a minha paixão pelo cinema com a minha paixão pelo desenvolvimento. Enquanto aprendia Nuxt.Js, criei essa página que utiliza a API do TMDB para ter acesso ao banco de dados que contém os filmes e séries, e a API do JustWatch para poder localizar os serviços de streaming que disponibilizam essas midias. Deu bastante trabalho principalmente porque eu ainda estava aprendendo como funcionavam as API's e também pelo fato de criar todos os componentes do zero sem utilizar nenhum framework com componentes pré-feitos. Deveria ter mais funcionalidades nesta aplicação como autenticação, criação de listas de filmes, avaliações, comentários... Mas percebi que eu estava indo rápido demais e querendo criar muita coisa que eu ainda não estava pronto nem tinha conhecimento necessário, principalmente do back-end, então resolvi deixar esse projeto para o futuro. Mas fiquei muito feliz com o resultado, inclusive a página 'Trending' eu utilizo até hoje quando quero encontrar algo novo para assistir.",
+      "12/12/2023 - Adoro filmes e séries, tenho mais de 900 filmes assistidos no letterboxd, então resolvi unir a minha paixão pelo cinema com a minha paixão pelo desenvolvimento. Enquanto aprendia Nuxt.js, criei esta página que utiliza a API do TMDB para acessar o banco de dados de filmes e séries e a API do JustWatch para localizar os serviços de streaming que disponibilizam essas mídias. Foi um desafio, principalmente porque eu ainda estava aprendendo a usar APIs e criando todos os componentes do zero, sem utilizar frameworks com componentes prontos.Minha intenção era adicionar mais funcionalidades à aplicação, como autenticação, criação de listas de filmes, avaliações e comentários. No entanto, percebi que estava tentando fazer muitas coisas para as quais ainda não tinha o conhecimento necessário, especialmente em back-end. Então, decidi deixar essas funcionalidades para um futuro aprimoramento do projeto. Mesmo assim, fiquei muito satisfeito com o resultado.",
   },
   {
     name: 'To-Do Timer',
@@ -87,7 +87,7 @@ const projects: Array<Project> = [
       'github',
     ],
     description:
-      '25/04/2024 - Na época minha fonte de renda eram jogos NFT que demandavam muita organização. Para isso eu criei esse To-Do bem simples porém bem funcional, implementei um sistema de timer que quando o tempo chega a zero um alerta sonoro é emitido até ser desligado.',
+      '25/04/2024 - Na época, minha fonte de renda eram jogos NFT que demandavam muita organização. Para isso, criei esta To-Do list simples, mas bem funcional. Implementei um sistema de timer que, ao chegar a zero, emite um alerta sonoro até ser desligado.',
   },
   {
     name: 'Pescaria Digital',
@@ -103,7 +103,7 @@ const projects: Array<Project> = [
       'photoshop'
     ],
     description:
-      '13/06/2024 - Meu primeiro projeto freelance, desenvolvido para uma streamer de variedades na plataforma Twitch.TV. Neste projeto eu deveria reinventar a típica brincadeira de festa junina conhecida como pescaria, mas desta vez de maneira digital. O objetivo era desenvolver uma página onde a influenciadora convidaria os participantes a escolherem um peixe virtual durante a transmissão ao vivo, com a chance de ganhar prêmios, dependendo da sorte. Eu gostaria de ter desenvolvido esse projeto com o framework Electron, porém eu não conhecia nada de Node.Js para o back-end e o tempo para aprender não seria suificente, então a minha maneira de persistir os dados necessários foi utilizando o localStorage do navegador.',
+      '13/06/2024 - Meu primeiro projeto freelance, desenvolvido para uma streamer de variedades na plataforma Twitch.TV. Nesse projeto, eu deveria reinventar a tradicional brincadeira de festa junina conhecida como pescaria, mas de forma digital. O objetivo era criar uma página onde a influenciadora convidaria os participantes a escolherem um peixe virtual durante a transmissão ao vivo, com a chance de ganhar prêmios, dependendo da sorte. Gostaria de ter desenvolvido esse projeto com o framework Electron, porém eu não tinha conhecimento em Node.js para o back-end, e o tempo para aprender não seria suficiente. Por isso, optei por persistir os dados necessários utilizando o localStorage do navegador.',
   },
   {
     name: 'Button Ui Kit',
@@ -119,7 +119,7 @@ const projects: Array<Project> = [
       'figma'
     ],
     description:
-      '03/10/2024 - Iniciei meu aprendizado em React e a melhor maneira de aprender uma tecnologia nova, na minha opinião, é criando algo sozinho, mas como minha habilidade em design não é das mais incríveis, procurei na comunidade do figma algo que fosse simples, bonito e que eu pudesse utilizar os conceitos que aprendi. Então encontrei esse kit de botões com vários estados e achei perfeito para treinar tanto minhas habilidades em React quanto em Figma. Os devidos créditos ao autor do design estão atribuidos na documentação do projeto no GitHub.',
+      '03/10/2024 - Iniciei meu aprendizado em React, e a melhor maneira de aprender uma tecnologia nova, na minha opinião, é criando algo sozinho. Então procurei na comunidade do Figma algo que fosse simples, bonito e que me permitisse aplicar os conceitos que aprendi. Foi aí que encontrei este kit de botões com vários estados, e achei perfeito para treinar tanto minhas habilidades em React quanto em Figma. Os devidos créditos ao autor do design estão atribuídos na documentação do projeto no GitHub.',
   },
   {
     name: 'Portfolio React',
@@ -136,7 +136,7 @@ const projects: Array<Project> = [
       'photoshop'
     ],
     description:
-      '08/11/2024 - Porfólio criado com o intuito de demonstrar as minhas habilidades nas tecnologias que estou me aprofundando. Este foi meu primeiro projeto completo em React, já que estava acostumado a utilizar Vue. Meu maior desafio foi a sintaxe, já que é levemente diferente do Vue, mas nada muito complexo, a maior diferença que notei foi que minhas variáveis não são diretamente mutaveis e que para tornalas reativas eu preciso sempre chamar uma função para modificar o valor original, diferente do Vue que eu posso simplesmente alterar o valor atribuindo um novo.',
+      '08/11/2024 - Portfólio criado com o objetivo de demonstrar minhas habilidades nas tecnologias nas quais estou me aprofundando. Este foi meu primeiro projeto completo em React, pois eu estava mais acostumado a utilizar Vue. Meu maior desafio foi a sintaxe, que é um pouco diferente da do Vue, mas nada muito complexo. A principal diferença que notei é que minhas variáveis não são diretamente mutáveis e, para torná-las reativas, preciso sempre chamar uma função para modificar o valor original. No Vue, eu poderia simplesmente alterar o valor atribuindo um novo.',
   },
 ];
 
