@@ -9,7 +9,7 @@ interface Props {
 
 export default function AtomsTitleName({
   children,
-  path = '/',
+  path = '/portfolio',
   className,
 }: Props) {
   return (
