@@ -7,18 +7,21 @@ import PagesProjetos from '../Components/Pages/PagesProjetos';
 export const routes: Array<RouteObject> = [
   {
     id: 'Home',
-    path: '/portfolio',
+    path: '/portfolio/',
     element: <PagesHome />,
-    errorElement: <PagesNotFound />,
   },
   {
     id: 'Projetos',
-    path: '/projetos',
+    path: '/portfolio/projetos',
     element: <PagesProjetos />,
   },
   {
     id: 'Contatos',
-    path: '/contatos',
+    path: '/portfolio/contatos',
     element: <PagesContatos />,
+  },
+  {
+    path: '*',
+    element: <PagesNotFound />,
   },
 ];

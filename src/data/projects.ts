@@ -4,7 +4,7 @@ const projects: Array<Project> = [
   {
     name: 'Bingo!',
     url: 'https://bingotestefront.netlify.app/',
-    image: '/assets/bingo.png',
+    image: '/portfolio/assets/bingo.png',
     skills: [
       'javascript',
       'html',
@@ -16,7 +16,7 @@ const projects: Array<Project> = [
   {
     name: 'Modern House',
     url: 'https://modernrlshouse.netlify.app/',
-    image: '/assets/modernhouse.png',
+    image: '/portfolio/assets/modernhouse.png',
     skills: [
       'javascript',
       'html',
@@ -28,7 +28,7 @@ const projects: Array<Project> = [
   {
     name: 'Travel Equator',
     url: 'https://equatortravelwebsite.netlify.app/',
-    image: '/assets/equator.png',
+    image: '/portfolio/assets/equator.png',
     skills: [
       'vue',
       'javascript',
@@ -44,7 +44,7 @@ const projects: Array<Project> = [
   {
     name: 'PokePlace',
     url: 'https://pokeplace.netlify.app/',
-    image: '/assets/pokeplace.png',
+    image: '/portfolio/assets/pokeplace.png',
     skills: [
       'vue',
       'javascript',
@@ -61,7 +61,7 @@ const projects: Array<Project> = [
   {
     name: 'Seriatonando',
     url: 'https://seriatonando.netlify.app/pt-BR/trending',
-    image: '/assets/seriatonando.png',
+    image: '/portfolio/assets/seriatonando.png',
     skills: [
       'vue',
       'typescript',
@@ -77,7 +77,7 @@ const projects: Array<Project> = [
   {
     name: 'To-Do Timer',
     url: 'https://todowithcountdown.netlify.app/',
-    image: '/assets/todotimer.png',
+    image: '/portfolio/assets/todotimer.png',
     skills: [
       'vue',
       'typescript',
@@ -92,7 +92,7 @@ const projects: Array<Project> = [
   {
     name: 'Pescaria Digital',
     url: 'https://choke7pescaria.netlify.app/',
-    image: '/assets/pescariaDigital.png',
+    image: '/portfolio/assets/pescariaDigital.png',
     skills: [
       'vue',
       'typescript',
@@ -108,7 +108,7 @@ const projects: Array<Project> = [
   {
     name: 'Button Ui Kit',
     url: 'https://free-responsive-button-ui-kit-react.netlify.app/',
-    image: '/assets/buttonUI.png',
+    image: '/portfolio/assets/buttonUI.png',
     skills: [
       'react',
       'typescript',
@@ -124,7 +124,7 @@ const projects: Array<Project> = [
   {
     name: 'Portfolio React',
     url: 'https://devalanlima.github.io/portfolio/',
-    image: '/assets/portfolioMockup.png',
+    image: '/portfolio/assets/portfolioMockup.png',
     skills: [
       'react',
       'typescript',
