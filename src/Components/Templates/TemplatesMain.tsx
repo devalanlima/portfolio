@@ -14,7 +14,7 @@ export default function TemplatesMain({ children }: Props) {
       <div className="mx-auto flex w-full max-w-[1300px] flex-grow">
         {children}
       </div>
-      {atualRoute.pathname !== '/contatos' && <OrganismsFooter />}
+      {atualRoute.pathname !== '/portfolio/contatos' && <OrganismsFooter />}
     </div>
   );
 }
