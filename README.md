@@ -97,10 +97,13 @@ Este portfólio está em constante atualização, pois sempre busco adicionar no
 
 ## [📞 Contato](https://devalanlima.github.io/portfolio/contatos)
 
-[![portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139)](https://devalanlima.github.io/portfolio/)
-[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](dev.alanlima@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/devalanlima/)
-[![whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white) ](https://wa.me/55021996058924)
+Portfólio: https://devalanlima.github.io/portfolio/
+
+Email: dev.alanlima@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/devalanlima/
+
+Telefone: [+55 (21) 99605-8924](https://wa.me/55021996058924)
 
 ## 🎯 Objetivo
 
